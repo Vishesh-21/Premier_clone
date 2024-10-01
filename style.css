@@ -1,0 +1,825 @@
+/* ============= Gerenal styling ============== */
+
+@import url("https://fonts.googleapis.com/css2?family=Jersey+10&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+:root {
+  --body-color: beige;
+  --main-color: #f8f8f8;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#main {
+  width: 100%;
+  height: 100%;
+  background-color: var(--main-color);
+  position: relative;
+  padding-top: 0.1px;
+}
+
+/* =========== Navbar Styling =========== */
+
+nav {
+  margin-top: 40px;
+  height: 11vh;
+  width: 100%;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav h2 {
+  font-size: 15px;
+  font-weight: 600;
+  word-wrap: nowrap;
+  width: calc(75% / 3);
+  height: 100%;
+  display: grid;
+  place-items: center;
+  border-right: 3px solid black;
+}
+
+nav h2:nth-last-child(1) {
+  width: 15%;
+}
+
+nav h1 {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "New Amsterdam", sans-serif;
+  font-size: 2.8rem;
+  letter-spacing: -3px;
+  position: relative;
+}
+
+nav h1::after {
+  content: "C";
+  font-size: 20px;
+  border: 2px solid black;
+  border-radius: 50%;
+  padding: 0vh 1vh;
+  margin-left: 4px;
+  margin-bottom: 10px;
+}
+
+nav h1::before {
+  content: "Manage task";
+  font-size: 12px;
+  letter-spacing: 2px;
+  padding: 0vh 1vh;
+  margin-left: 4px;
+  position: absolute;
+  bottom: -7%;
+  right: 30%;
+}
+
+/* -------------------------------- */
+
+#center {
+  height: 90%;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+
+#content {
+  width: 80%;
+  height: 80%;
+  position: relative;
+}
+
+#content video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 30% 30%;
+}
+
+.overlay {
+  height: 50%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  color: rgba(255, 255, 255, 0.904);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.overlay #over1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px;
+  width: 95%;
+  border-bottom: 2px solid white;
+}
+
+.overlay #over1 h1 {
+  font-family: "New Amsterdam", sans-serif;
+  font-size: 3rem;
+}
+
+.overlay #over1 h3 {
+  height: 80px;
+  width: 80px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  border: 2px solid rgba(245, 245, 245, 0.42);
+  border-right: 2px solid white;
+}
+
+#over2 {
+  display: flex;
+  width: 95%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px 40px 20px;
+}
+
+#over2 h1 {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+#over2 i {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+/* =========================== */
+
+#scrol {
+  height: 40vh;
+  width: 100%;
+  white-space: nowrap;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  padding: 2vh;
+}
+
+#scrol img {
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
+  margin: 2vh;
+}
+
+.imgCont {
+  height: 100%;
+  display: inline-block;
+  animation: scroll 10s infinite linear;
+}
+
+/* ======================== */
+
+#alphabet {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  height: 12vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2vh 15vh;
+  font-style: italic;
+  font-size: 22px;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+#all {
+  text-decoration: underline;
+  font-weight: 200;
+  margin-right: 4vh;
+  font-size: 28px;
+  text-transform: uppercase;
+}
+
+#alphabet h6 {
+  font-weight: 400;
+  width: 80px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s ease;
+}
+
+#alphabet h6:hover {
+  border: 2px solid rgba(0, 0, 0, 0.66);
+}
+
+/* =================================== */
+
+#page2,
+#page3,
+#page4,
+#page5,
+#page6 {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainCont {
+  width: 90%;
+  height: 100%;
+}
+
+.half1,
+.half2,
+.half3 {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: space-around;
+}
+
+.left {
+  width: 50%;
+  height: 100%;
+}
+
+.left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.right {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.right img {
+  width: 100%;
+  height: 69%;
+  object-fit: cover;
+}
+
+.inRight {
+  display: flex;
+  justify-content: space-between;
+}
+
+.inRight h1 {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: -1px;
+  line-height: 25px;
+}
+
+.inRight p {
+  width: 50%;
+  font-size: 0.8rem;
+  line-height: 15px;
+}
+
+#rotateImg img {
+  animation: rotateImg 10s linear infinite;
+}
+
+.mainCont #special {
+  text-transform: uppercase;
+  font-family: "New Amsterdam", sans-serif;
+  font-size: 2.8rem;
+  letter-spacing: -3px;
+  margin: 20px 0px;
+  padding-left: 43px;
+}
+
+@keyframes rotateImg {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* =================================== */
+
+.half2 {
+  height: 80vh;
+  align-items: center;
+  gap: 40px;
+}
+
+.right2 {
+  width: 50%;
+  height: 100%;
+}
+
+.right2 img,
+.half3 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.left2 {
+  width: 35%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.left2 img {
+  width: 60%;
+  height: 60%;
+  object-fit: cover;
+}
+
+.left2 h2 {
+  margin-top: 50px;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: -1px;
+  line-height: 25px;
+}
+
+.half3 {
+  padding: 50px 35px;
+  position: relative;
+}
+
+.half3 h2 {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  position: absolute;
+  color: #f8f8f8;
+  right: 50px;
+  top: 60px;
+  border: 2px solid white;
+}
+
+/* ============================= */
+
+#page3 {
+  margin: 0px;
+  flex-direction: column;
+}
+
+#page3 h1,
+#movieShot h2 {
+  text-transform: uppercase;
+  font-family: "New Amsterdam", sans-serif;
+  font-size: 2.8rem;
+  letter-spacing: -3px;
+  margin: 20px 0px;
+  padding-left: 43px;
+  font-weight: 800;
+}
+
+#pageCont {
+  margin-top: 30px;
+  height: 90vh;
+  width: 84%;
+}
+
+#pageCont .ele {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.6rem;
+  border-top: 2px solid black;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+}
+
+.ele h2 {
+  font-weight: 400;
+  text-transform: uppercase;
+  font: 1.1rem;
+}
+
+#img {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+#img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  scale: 0;
+  opacity: 0;
+  transition: all 300ms ease-in-out;
+}
+
+.ele h3 {
+  font-size: 0.9rem;
+  font-size: 500;
+  opacity: 0;
+  transition: all 300ms linear;
+}
+
+.ele h3 span {
+  font-size: 0.8rem;
+  font-weight: 200;
+}
+
+#pageCont .ele:hover {
+  background-color: #dedede;
+}
+
+#pageCont .ele:hover #img img,
+#pageCont .ele:hover h3 {
+  scale: 1;
+  opacity: 1;
+}
+
+#pageCont .ele:nth-last-child(1) {
+  border-bottom: 2px solid black;
+}
+
+/* ===================================== */
+
+#page4 {
+  margin-top: 10px;
+  flex-direction: column;
+}
+
+#page4 .half3 {
+  width: 89%;
+}
+
+.page4Cont {
+  width: 84%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left3 {
+  width: 45%;
+  height: 90vh;
+}
+
+.left3 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 70% 70%;
+}
+
+.right3 {
+  width: 50%;
+  height: 90vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.movieShot {
+  height: 38%;
+}
+
+.page4Img {
+  display: flex;
+  height: 60%;
+  justify-content: space-between;
+}
+
+.page4Img div {
+  width: 55%;
+  height: 100%;
+}
+
+.page4Img div:last-child {
+  width: 40%;
+  height: 100%;
+}
+
+.page4Img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.movieShot h2 {
+  margin: 0px 0px;
+  padding-left: 0px;
+  text-transform: uppercase;
+  font-family: "New Amsterdam", sans-serif;
+  font-size: 2.8rem;
+  letter-spacing: -3px;
+  font-weight: 800;
+}
+
+.movieShot h4 {
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 20px;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+.movieShot p {
+  font-size: 0.8rem;
+  line-height: 15px;
+  margin-bottom: 12px;
+}
+
+/* ======================================= */
+
+#marquee {
+  height: 25vh;
+  width: 100%;
+  margin-bottom: 40px;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  white-space: nowrap;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+#marquee h1 {
+  display: inline-block;
+  font-size: 6rem;
+  font-family: "New Amsterdam", sans-serif;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  font-weight: 900;
+  -webkit-text-stroke: 3px black;
+  color: transparent;
+  margin-right: 16px;
+  letter-spacing: -5px;
+  animation: marquee 5s infinite linear;
+}
+/* ====================================== */
+
+#page5 {
+  margin: 0px;
+}
+
+.page5Cont {
+  width: 84%;
+  height: 80vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left4 {
+  width: 50%;
+  height: 100%;
+}
+
+.left4 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.right4 {
+  width: 45%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.ryt {
+  width: 100%;
+  height: 60%;
+}
+
+.right4 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 20% 20%;
+}
+
+.ryt2 {
+  width: 100%;
+  display: flex;
+  height: 37%;
+  gap: 3rem;
+  justify-content: space-between;
+}
+
+#box1 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  word-spacing: -2px;
+  line-height: 25px;
+}
+
+#box2 {
+  width: 100%;
+  font-size: 0.8rem;
+}
+
+/* =================================== */
+
+#page6 {
+  margin-top: 0px;
+  height: 90vh;
+  margin-bottom: 0px;
+}
+
+#cont {
+  width: 84%;
+  height: 100%;
+  padding: 17vh 0vh 17vh 0vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+#desc img {
+  margin-top: 30px;
+  width: 26rem;
+  height: 16rem;
+  object-fit: cover;
+}
+
+#cont #title {
+  text-transform: uppercase;
+  font-family: "New Amsterdam", sans-serif;
+  font-size: 2.8rem;
+  line-height: 30px;
+  letter-spacing: -3px;
+  font-weight: 800;
+}
+
+#desc h4 {
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+#desc h4::before {
+  content: "G";
+  font-size: 20px;
+  font-weight: 700;
+  padding: 0vh 1vh;
+  border: 2px solid black;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* ======================================= */
+
+footer {
+  width: 100%;
+  height: 50vh;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+footer h1 {
+  font-family: "New Amsterdam", sans-serif;
+  font-size: 2.8rem;
+  letter-spacing: -3px;
+  padding: 5vh;
+  width: 100%;
+  position: relative;
+}
+
+footer h1::after {
+  content: "C";
+  font-size: 18px;
+  padding: 0vh 1vh;
+  border: 2px solid black;
+  border-radius: 50%;
+  margin-left: 4px;
+  position: absolute;
+}
+
+footer h1::before {
+  content: "Manage task";
+  font-size: 12px;
+  letter-spacing: 2px;
+  padding: 0vh 1vh;
+  margin-left: 4px;
+  position: absolute;
+  bottom: 20%;
+  right: 40%;
+}
+
+footer h2 {
+  border-right: 3px solid black;
+  height: 100%;
+  width: 100%;
+  padding: 6vh 4vh;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+footer div {
+  width: 400px;
+}
+
+footer div #set {
+  font-size: 15px;
+  font-weight: 400;
+  border-bottom: none;
+  padding: 0px 4vh;
+}
+
+#icons {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 0vh 4vh;
+  font-size: 25px;
+}
+
+#icons i {
+  margin-right: 20px;
+  cursor: pointer;
+  transition: all 150ms linear;
+}
+
+footer div h2 {
+  border-bottom: 3px solid black;
+  border-right: none;
+}
+
+#icons i:nth-child(1):hover {
+  color: red;
+}
+#icons i:nth-child(2):hover {
+  color: rgb(59, 100, 223);
+}
+#icons i:nth-child(3):hover {
+  color: rgb(21, 136, 237);
+}
+#icons i:nth-child(4):hover {
+  color: red;
+}
+#icons i:nth-child(5):hover {
+  color: rgb(0, 105, 225);
+}
+
+/* ======================================== */
+
+#extra {
+  background-color: transparent;
+  width: 100%;
+  height: 10vh;
+}
+
+/* ============= Animation =========== */
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - 20px));
+  }
+}
